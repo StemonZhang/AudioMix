@@ -1,0 +1,14 @@
+prefix=/Users/kaola/Documents/code/IOS_code_from_github/ijkplayer-git/ijkplayer/ios/build/ffmpeg-i386/output
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.60.100
+Requires: libavutil >= 54.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -lm -lbz2 -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
