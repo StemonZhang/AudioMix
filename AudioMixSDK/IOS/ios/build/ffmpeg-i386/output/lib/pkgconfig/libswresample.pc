@@ -1,0 +1,14 @@
+prefix=/Users/kaola/Documents/code/IOS_code_from_github/ijkplayer-git/ijkplayer/ios/build/ffmpeg-i386/output
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 1.2.101
+Requires: libavutil >= 54.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}
